@@ -49,12 +49,14 @@ function Form() {
 
   return (
     <form onSubmit={handleSubmit}>
+
       <div>
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" ref={nameRef} />
         {errors.name && <span className="error">{errors.name}</span>}
       </div>
       <div>
+      
         <label htmlFor="email">Email:</label>
         <input type="email" id="email" ref={emailRef} />
         {errors.email && <span className="error">{errors.email}</span>}
