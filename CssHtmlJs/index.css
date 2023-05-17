@@ -1,0 +1,50 @@
+#heading{
+   font-style: italic;
+   margin-left: 40%;
+   
+}
+
+#box{
+    border: 1px solid red;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#todo{
+    display: flex;
+    flex-direction: row;
+}
+
+#todoDiv{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin: auto;
+}
+.toggle{
+color: white;
+background-color: rgb(184, 195, 62);
+width: 80px;
+height: 20px;
+border: none;
+}
+.delete{
+color: aliceblue;
+background-color: red;
+width: 80px;
+height: 20px;
+border: none;
+}
+
+#AddDiv{
+    width: 40%;
+   margin-left: 40%;
+}
+
+#AddTodoButton{
+    background-color: aliceblue;
+    color: black;
+}
