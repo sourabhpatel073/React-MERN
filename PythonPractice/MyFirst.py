@@ -18,3 +18,24 @@ print(f)
 # Integer Division
 g = a // b  # g will be 2 (integer division)
 print(g)
+
+#conditional statements
+age = 25
+
+if age < 18:
+    print("You are underage.")
+elif age >= 18 and age < 65:
+    print("You are an adult.")
+else:
+    print("You are a senior citizen.")
+
+    # For loop
+for i in range(1, 5):
+    print(i)
+
+    # While loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+    
