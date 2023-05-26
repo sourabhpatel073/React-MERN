@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #progressBar {
+      width: 300px;
+      height: 20px;
+      background-color: #f2f2f2;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    #progress {
+      height: 100%;
+      background-color: #4caf50;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div id="progressBar">
+    <div id="progress"></div>
+  </div>
+
+  <button onclick="startProgress()">Start Progress</button>
+
+  <script>
+    function startProgress() {
+      var progressBar = document.getElementById('progress');
+      var width = 1;
+      var interval = setInterval(increaseWidth, 100);
+
+      function increaseWidth() {
+        if (width >= 100) {
+          clearInterval(interval);
+        } else {
+          width++;
+          progressBar.style.width = width + '%';
+        }
+      }
+    }
+  </script>
+</body>
+</html>

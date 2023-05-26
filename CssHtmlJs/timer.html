@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      text-align: center;
+      font-size: 24px;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Timer</h1>
+  <div id="timer">00:00:00</div>
+
+  <script>
+    var timerElement = document.getElementById('timer');
+    var hours = 0;
+    var minutes = 0;
+    var seconds = 0;
+
+    function startTimer() {
+      setInterval(updateTimer, 1000);
+    }
+
+    function updateTimer() {
+      seconds++;
+      if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes >= 60) {
+          minutes = 0;
+          hours++;
+        }
+      }
+      timerElement.textContent = formatTime(hours) + ':' + formatTime(minutes) + ':' + formatTime(seconds);
+    }
+
+    function formatTime(time) {
+      return (time < 10) ? '0' + time : time;
+    }
+
+    startTimer();
+  </script>
+</body>
+</html>
