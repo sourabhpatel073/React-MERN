@@ -6,7 +6,7 @@ import Form from './Components/Form';
 function App() {
   return (
     <div className="App">
-      <h1>React Practice </h1>
+      <h1>React Practice for learn </h1>
       <Counter/>
       <Form/>
     </div>
