@@ -1,18 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Timer from './Components/Timer';
 import Counter from './Components/Counter';
-import Form from './Components/Form';
-import MyModal from './Components/Modal';
-
 
 function App() {
   return (
     <div className="App">
-      <h1>React Practice for learn </h1>
-    
-      <Counter/>
-      <Form/>
-      <MyModal/>
+     <Timer/>
+     <Counter/>
     </div>
   );
 }

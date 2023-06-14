@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .draggable-item {
+        cursor: grab;
+       
+      }
+      
+      .drop-zone {
+        border: 2px dashed #ccc;
+        padding: 10px;
+        
+      }</style>
+</head>
+<body>
+    <div class="draggable-item" draggable="true">Item 1</div>
+<div class="draggable-item" draggable="true">Item 2</div>
+<div class="drop-zone">Drop here</div>
+
+</body>
+</html>
+<script>
+    const draggableItems = document.querySelectorAll('.draggable-item');
+
+draggableItems.forEach((item) => {
+  item.addEventListener('dragstart', handleDragStart);
+});
+
+function handleDragStart(event) {
+  event.dataTransfer.setData('text/plain', event.target.id);
+}
+const dropZone = document.querySelector('.drop-zone');
+
+dropZone.addEventListener('dragover', handleDragOver);
+dropZone.addEventListener('drop', handleDrop);
+
+function handleDragOver(event) {
+  event.preventDefault();
+}
+
+function handleDrop(event) {
+  event.preventDefault();
+  const itemId = event.dataTransfer.getData('text/plain');
+  const item = document.getElementById(itemId);
+  event.target.appendChild(item);
+}
+
+</script>
