@@ -10,6 +10,7 @@ const handleChange=(e)=>{
 function getData(){
     axios.get(`https://dummyjson.com/posts/?q=${qurey}`).then((res)=>{
         setData(res.data)
+        console.log("hello")
     })
 }
 useEffect(()=>{
