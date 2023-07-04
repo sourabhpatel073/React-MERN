@@ -1,0 +1,25 @@
+.image-container {
+    position: relative;
+    width: 800px; /* Adjust the width and height to match your image */
+    height: 500px;
+    background-image: url("path/to/your-image.jpg");
+    background-size: cover;
+  }
+  
+  .image-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .image-content h1 {
+    font-size: 28px;
+  }
+  
+  .image-content p {
+    font-size: 18px;
+  }
+  
