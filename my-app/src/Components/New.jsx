@@ -24,6 +24,7 @@ return ()=>{
             }
             ,[count])
     return <div>
+    <h2>counter app </h2>
         <h2>{count}</h2>
         <button onClick={()=>{handleAdd(1)}}>add</button>
         <button onClick={()=>{handleAdd(-1)}}>reduce</button>
