@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <h1>React Practice for learn </h1>
-    
+    <h2>practice</h2>
       <Counter/>
       <Form/>
       <MyModal/>
