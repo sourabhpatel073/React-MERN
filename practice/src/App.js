@@ -9,7 +9,8 @@ function App() {
   return (
     <div className="App">
       <h1>React Practice for learn </h1>
-    <h2>practice</h2>
+    <h>practice</h>
+    <p>react for new year</p>
       <Counter/>
       <Form/>
       <MyModal/>
